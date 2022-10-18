@@ -13,10 +13,113 @@
         crossorigin="anonymous"></script>
 
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+
+    <style>
+      * {
+    font-family: 'Gowun Dodum', sans-serif;
+    }
+      .movie {
+        background-color: green;
+        width: 100%;
+        height: 250px;
+
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg");
+        background-size: cover;
+        background-position: center;
+
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+      }
+      .movie > button {
+        width: 200px;
+        height: 50px;
+
+        background-color: transparent;
+        color: white;
+
+        border-radius: 50px;
+
+        border: 1px solid white;
+
+        margin-top: 10px;
+      }
+      .movie > button:hover {
+        border: 2px solid white;
+      }
+      .comment {
+          color: gray;
+      }
+      .wrap {
+          width: 1200px;
+          margin: 20px auto 0px auto;
+      }
+    </style>
 </head>
 
 <body>
-    <button type="button" class="btn btn-primary">나는 버튼이다.</button>
+    <div class="movie">
+      <h1>내 생애 최고의 영화들</h1>
+      <button>영화 기록하기</button>
+    </div>
+    <div class="wrap">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="comment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
