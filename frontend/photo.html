@@ -91,11 +91,28 @@
         }
 
     </style>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+              type: "GET",
+              url: "http://spartacodingclub.shop/sparta_api/weather/seoul",
+              data: {},
+              success: function(response){
+                  $('#temp').text(response['temp'])
+                  document.getElementById('icon').src=response['icon']
+                  $('#city').text(response['city'])
+                  $('#clouds').text(response['clouds'])
+                }
+              })
+        });
+    </script>
 </head>
 
 <body>
 <div class="movie">
     <h1>나의 사진 길거리 사진전</h1>
+
+        <p><span id="city"></span> <img id="icon" src=""><span></span> <span id="icon"></span> <span id="clouds"></span> <span id="temp"></span>℃</p>
 </div>
 <div>
     <div class="mypost">

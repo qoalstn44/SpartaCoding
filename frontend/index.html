@@ -91,6 +91,24 @@
         }
     </style>
     <script>
+
+        $.ajax({
+            type: "GET",
+            url: "http://spartacodingclub.shop/sparta_api/seoulair",
+            data: {},
+            success: function (response) {
+                let rows  =response['RealtimeCityAir']['row']
+                for (let i = 0, i < row.length; i++) {
+                    let gu_name = row[i]['MSRSTE_NM']
+                    let gu_mise = row[i]['IDEX_MVL']
+                    let gu_color = row[i]['IDEX_MVL']
+                }
+            }
+        })
+
+
+
+
     function  open_box() {
         $('#post-box').show();
     }
